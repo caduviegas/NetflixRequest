@@ -10,7 +10,7 @@ import com.innaval.netflixremake.model.Movie
 
 // Aqui é a lista Horizontal
 
-class MovieAdapter(private val movies: List<Movie>) :
+class MovieAdapter(private val movies: List<Movie>, movieItemSimilar: Int) :
     RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
     override fun onCreateViewHolder(
