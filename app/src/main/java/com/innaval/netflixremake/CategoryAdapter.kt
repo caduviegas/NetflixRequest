@@ -10,7 +10,7 @@ import com.innaval.netflixremake.model.Category
 
 
 // Aqui é a lista vertical
-class CategoryAdapter(private val categories: List<Category>) :
+class CategoryAdapter(private val categories: List<Category>, param: (Any) -> Unit) :
     RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
